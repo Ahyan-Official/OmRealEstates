@@ -136,6 +136,7 @@ public class Main3Activity extends Activity {
                 Log.d("onAdFailedToLoad", "This is why: "+errorCode);
             }});
 
+        //000
 
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-2310937912232191/2912338959");
