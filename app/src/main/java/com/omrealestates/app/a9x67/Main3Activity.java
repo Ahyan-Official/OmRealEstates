@@ -125,16 +125,16 @@ public class Main3Activity extends Activity {
 //        statusCheck();
 
 
-        AdView adView = (AdView) findViewById(R.id.adView);
-
-        AdRequest request = new AdRequest.Builder().build();
-        adView.loadAd(request);
-
-        adView.setAdListener(new AdListener() {
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                Log.d("onAdFailedToLoad", "This is why: "+errorCode);
-            }});
+//        AdView adView = (AdView) findViewById(R.id.adView);
+//
+//        AdRequest request = new AdRequest.Builder().build();
+//        adView.loadAd(request);
+//
+//        adView.setAdListener(new AdListener() {
+//            @Override
+//            public void onAdFailedToLoad(int errorCode) {
+//                Log.d("onAdFailedToLoad", "This is why: "+errorCode);
+//            }});
 
         //000
 
