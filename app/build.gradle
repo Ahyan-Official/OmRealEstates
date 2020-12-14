@@ -7,8 +7,8 @@ android {
         applicationId "com.omrealestates.app.a9x67"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 6
-        versionName "6.0"
+        versionCode 8
+        versionName "8.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
     }

@@ -105,6 +105,7 @@ public class Main3Activity extends Activity {
     }
     AdView adView;
     private InterstitialAd mInterstitialAd;
+    int i = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -344,14 +345,22 @@ public class Main3Activity extends Activity {
                 //pd.dismiss();
 
                 swipe.setRefreshing(false);
-                AdRequest.Builder adRequestBuilder = new AdRequest.Builder();
-                mInterstitialAd.loadAd(adRequestBuilder.build());
-                if (mInterstitialAd.isLoaded()) {
-                    mInterstitialAd.show();
-                } else {
-                    // Proceed to the next level.
-                    //goToNextLevel();
+
+                if(i%2==0){
+
+                    i++;
+                    AdRequest.Builder adRequestBuilder = new AdRequest.Builder();
+                    mInterstitialAd.loadAd(adRequestBuilder.build());
+                    if (mInterstitialAd.isLoaded()) {
+                        mInterstitialAd.show();
+                    } else {
+                        // Proceed to the next level.
+                        //goToNextLevel();
+                    }
+
                 }
+
+
                 super.onPageFinished(view, url);
             }
 
